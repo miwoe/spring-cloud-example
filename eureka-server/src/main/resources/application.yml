@@ -1,0 +1,18 @@
+server:
+  port: 8762
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+  server:
+    waitTimeInMsWhenSyncEmpty: 100
+
+
